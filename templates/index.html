@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella</title>
+    <style>
+        body {
+            font-family: gilmoray, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            margin: 0;
+            color: white;
+            background-color: black;
+        }
+
+
+        #p-style1{
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+
+        #p-style2{
+            font-size: 30px;
+
+        }
+
+        #umbrella{
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: -15px;
+            letter-spacing: 5px;
+        }
+
+        #weather{
+            margin-top: 30px;
+            font-size:30px;
+        }
+        #status{
+            font-size:30px;
+        }
+        #weather-box{
+            border: 2px solid white; /* Box border */
+            padding: 20px;           /* Padding inside the box */
+            margin-top: 0px;        /* Spacing between the box and other content */
+            background-color: rgba(51, 51, 51, 0.7); /* Dark grey with 80% opacity */
+            text-align: center;      /* Center the text inside the box */
+            width: 20%;              /* Adjust the width of the box (optional) */
+            max-width: 600px;        /* Ensure the box doesn't get too wide on larger screens */
+        }
+    </style>
+</head>
+<body>
+
+    <p id="umbrella">Umbrella</p>
+    <p id="p-style2">Streetwear for any weather</p>
+
+    <div id="weather-box">
+        <p id="p-style1" >📍<span id = "city">City</span>, <span id = "country">Country</span>.</p>
+        <div id="weather">Fetching weather data...</div>
+        <div id="status">Fetching weather status...</div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
