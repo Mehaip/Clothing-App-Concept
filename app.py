@@ -28,10 +28,7 @@ def weather():
         w = observation.weather
         temperature = w.temperature('celsius')['temp']
         detailed_status = w.detailed_status
-        city = city.replace('ă', 'a')
-        city = city.replace('â', 'a')
-        city = city.replace('ș', 's')
-
+        print(type(city))
         return jsonify({'temperature': temperature, 'detailed_status' : detailed_status, 'city' : city, 'country' : country})
     except Exception as e:
         return jsonify({'error': str(e)}), 500

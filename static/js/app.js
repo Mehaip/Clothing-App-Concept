@@ -6,7 +6,7 @@
             } else {
                 document.getElementById('weather').innerText = `${data.temperature}°C`;
                 document.getElementById('status').innerText = `${data.detailed_status}`;
-                document.getElementById('city').innerText = `${data.city}`;
+                document.getElementById('city').innerText = `${data.city}`.replace('ş', 's');
                 document.getElementById('country').innerText = `${data.country}`
             }
         })
