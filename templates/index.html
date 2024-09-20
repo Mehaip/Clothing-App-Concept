@@ -4,91 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umbrella</title>
-    <style>
-        body{
-            font-family: gilmoray, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 70vh;
-            margin: 0;
-            color: white;
-            background-color: black;
-            text-decoration: none;
-        }
-        a{
-            color:inherit;
-            text-decoration: none;
-        }
-
-
-        #p-style1{
-            font-size: 30px;
-            margin-bottom: -20px;
-            margin-top: 5px;
-        }
-
-        #p-style2{
-            font-size: 30px;
-
-        }
-
-        #umbrella{
-            font-size: 60px;
-            font-weight: 800;
-            margin-bottom: -15px;
-            letter-spacing: 5px;
-        }
-
-        #weather{
-            margin-top: 30px;
-            font-size:30px;
-        }
-        #status{
-            font-size:30px;
-        }
-        #weather-box{
-            border: 2px solid white; /* Box border */
-            padding: 5px 10px;           /* Padding inside the box */
-            margin-top: -10px;        /* Spacing between the box and other content */
-            background-color: rgba(51, 51, 51, 0.7); /* Dark grey with 80% opacity */
-            text-align: center;      /* Center the text inside the box */
-            width: 15%;              /* Adjust the width of the box (optional) */
-            max-width: 600px;        /* Ensure the box doesn't get too wide on larger screens */
-        }
-
-        #selection-box{
-            border: 2px solid white; /* Box border */
-            padding: 5px 10px;           /* Padding inside the box */
-            margin-top: 10px;        /* Spacing between the box and other content */
-            background-color: rgba(51, 51, 51, 0.7); /* Dark grey with 80% opacity */
-            text-align: center;      /* Center the text inside the box */
-            width: 15%;              /* Adjust the width of the box (optional) */
-            max-width: 600px;        /* Ensure the box doesn't get too wide on larger screens */
-        }
-
-        #selection-list{
-            list-style-type: none;
-            padding: 6px 60px;
-            text-align: left;
-            font-size: 22px;
-            line-height: 1.5;
-
-        }
-
-
-        #selection-list li:hover {
-            display: inline-block; /* Make the list item inline */
-            background-color: lightgray;
-            color: black;
-}
-
-
-
-
-
-    </style>
+    <link rel ="stylesheet" href="/static/css/styles.css"></link>
 </head>
 <body>
 
@@ -102,11 +18,18 @@
     </div>
     <div id = "selection-box">
         <ul id="selection-list">
-            <li>start</li>
+            <li id="startBtn">start</li>
             <li>credits</li>
             <li> <a href="https://github.com/Mehaip">github</a></li>
         </ul>
     </div>
+    <div id = "question" style="font-size: 36px">What do you wear?</div>
+
+    <div id = "keyword-box">
+        <input type="text" id="keyword-input" placeholder="Relevant words that define your style.">
+    </div>
+    <div id = "suggestions" style="font-size: 20px">use short terms such as: 'baggy', 'classy', 'short', 'colored', 'green', 'black' etc</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/static/js/app.js"></script>
 </body>
 </html>

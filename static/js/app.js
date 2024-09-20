@@ -13,7 +13,20 @@
         .catch(error => console.error('Error fetching weather data:', error));
 
 
-const UNSPLASH_KEY = '1y6ZxlAGql2yVc6qguWeqhiLhJjMct9pAxfF2kpfc5Q';
-const query = 'clothing';
-const url = `https://api.unsplash.com/search/photos?query=${query}&client_id=${UNSPLASH_KEY}`;
+document.getElementById("startBtn").addEventListener("click", startAnimation);
+
+function startAnimation() {
+   $("#umbrella").fadeOut();
+   $("#p-style2").fadeOut();
+   $("#selection-box").fadeOut();
+   $("#weather-box").animate({top:'-=21%'}, 2000);
+
+   setTimeout(function(){
+       document.getElementById("keyword-box").classList.add('show');
+        document.getElementById("question").classList.add('show');
+        document.getElementById("suggestions").classList.add('show');
+   }, 2000)
+
+
+}
 
