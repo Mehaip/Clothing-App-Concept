@@ -4,7 +4,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 70vh;
+            height: 100vh;
             margin: 0;
             color: white;
             background-color: black;
@@ -87,7 +87,7 @@
             background-color: rgba(51, 51, 51, 1); /* Dark grey with 80% opacity */
             text-align: center;      /* Center the text inside the box */
             width: 30%;              /* Adjust the width of the box (optional) */
-            height: 10%;
+            height: 6%;
             max-width: 600px;        /* Ensure the box doesn't get too wide on larger screens */
             opacity: 0;
             visibility: hidden;

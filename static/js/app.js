@@ -19,7 +19,9 @@ function startAnimation() {
    $("#umbrella").fadeOut();
    $("#p-style2").fadeOut();
    $("#selection-box").fadeOut();
-   $("#weather-box").animate({top:'-=21%'}, 2000);
+   setTimeout(function(){
+        $("#weather-box").animate({top:'-=21%'}, 2000);}, 300);
+
 
    setTimeout(function(){
        document.getElementById("keyword-box").classList.add('show');
