@@ -8,6 +8,8 @@ app = Flask(__name__)
 owm = OWM('04f1a4c3b0e6baada9b51a7115c3fa43')
 mgr = owm.weather_manager()
 
+
+
 def get_location():
     response = requests.get('https://ipinfo.io/')
     data = response.json()
@@ -16,6 +18,8 @@ def get_location():
 def index():
     # Serve the main HTML page
     return render_template('index.html')
+
+
 @app.route('/weather')
 def weather():
     # Get the user's location based on IP address

@@ -12,3 +12,8 @@
         })
         .catch(error => console.error('Error fetching weather data:', error));
 
+
+const UNSPLASH_KEY = '1y6ZxlAGql2yVc6qguWeqhiLhJjMct9pAxfF2kpfc5Q';
+const query = 'clothing';
+const url = `https://api.unsplash.com/search/photos?query=${query}&client_id=${UNSPLASH_KEY}`;
+
