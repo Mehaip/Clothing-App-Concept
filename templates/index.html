@@ -65,11 +65,19 @@
 
         #selection-list{
             list-style-type: none;
-            padding: 10px 60px;
+            padding: 6px 60px;
             text-align: left;
-            font-size: 20px;
+            font-size: 22px;
+            line-height: 1.5;
 
         }
+
+        #selection-list li:hover {
+    display: inline-block; /* Make the list item inline */
+            background-color: lightgray;
+            color: black;
+}
+
 
 
     </style>
@@ -86,9 +94,9 @@
     </div>
     <div id = "selection-box">
         <ul id="selection-list">
-            <li>start</li>
-            <li>credits</li>
-            <li>github</li>
+            <li id="hover">start</li>
+            <li id="hover1">credits</li>
+            <li id="hover2">github</li>
         </ul>
     </div>
     <script src="/static/js/app.js"></script>
