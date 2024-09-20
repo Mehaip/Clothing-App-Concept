@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
-import geocoder
 from pyowm import OWM
+import requests
 
 app = Flask(__name__)
 
@@ -8,6 +8,10 @@ app = Flask(__name__)
 owm = OWM('04f1a4c3b0e6baada9b51a7115c3fa43')
 mgr = owm.weather_manager()
 
+def get_location():
+    response = requests.get('https://ipinfo.io/')
+    data = response.json()
+    return data
 @app.route('/')
 def index():
     # Serve the main HTML page
@@ -15,10 +19,9 @@ def index():
 @app.route('/weather')
 def weather():
     # Get the user's location based on IP address
-    g = geocoder.ip("me")
-    city = geocoder.osm(g.latlng, method='reverse').city
-    country = geocoder.osm(g.latlng, method='reverse').country
-
+    location = get_location()
+    city = location["city"]
+    country = location["country"]
     try:
         # Get the weather for the location
         observation = mgr.weather_at_place(city)
@@ -28,7 +31,6 @@ def weather():
         city = city.replace('ă', 'a')
         city = city.replace('â', 'a')
         city = city.replace('ș', 's')
-        country = country.replace('â', 'a')
 
         return jsonify({'temperature': temperature, 'detailed_status' : detailed_status, 'city' : city, 'country' : country})
     except Exception as e:
