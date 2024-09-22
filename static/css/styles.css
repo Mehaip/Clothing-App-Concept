@@ -194,4 +194,47 @@
             visibility: visible;
         }
 
+        .ignore{
+            display: none;
+        }
+
+        #clothing-pics{
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+          #clothing-pics.show{
+            position: absolute;
+            visibility: visible;
+            opacity: 1;
+               transition: opacity 3s ease;
+        }
+
+        .resized{
+            transform: scale(0.5);
+        }
+
+        .pic{
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        #hoodie.show{
+            opacity: 100;
+            visibility: visible;
+            transition: opacity 3s ease;
+        }
+
+        #jns.show{
+            opacity: 100;
+            visibility: visible;
+            transition: opacity 3s ease;
+        }
+
+        #shoes.show{
+            opacity: 100;
+            visibility: visible;
+            transition: opacity 3s ease;
+        }
 

@@ -73,7 +73,21 @@ function startAnimation() {
 
 document.getElementById("resultsButton").addEventListener("click", final_page);
 
-function showcase() {
+function final_page() {
+
+   document.getElementById("keyword-box").classList.remove('show');
+    document.getElementById("question").classList.remove('show');
+    document.getElementById("suggestions").classList.remove('show');
+    document.getElementById("resultsButton").classList.remove('show');
+    document.getElementById("clothing-pics").classList.add('show');
+    setTimeout(function(){
+        document.getElementById("hoodie").classList.add('show');
+    }, 2000);
+    setTimeout(function(){
+        document.getElementById("jns").classList.add('show');
+    }, 2500);
+    setTimeout(function(){
+        document.getElementById("shoes").classList.add('show');
+    }, 3000);
 
 }
-
