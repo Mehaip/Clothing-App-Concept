@@ -32,10 +32,16 @@ function tagAdded(event){
                 }, 0);
                 setTimeout(function (){
                     newTag.classList.add('hide');
+
                 }, 2000);
+
+                setTimeout( function () {
+                    document.getElementById("tag-container").removeChild(newTag);
+                }, 3000);
 
                 input.value= "";
                 tags.push(tagText);
+
             }
         console.log(tags);
     }
@@ -47,6 +53,7 @@ function startAnimation() {
    $("#umbrella").fadeOut();
    $("#p-style2").fadeOut();
    $("#selection-box").fadeOut();
+
    setTimeout(function(){
         $("#weather-box").animate({top:'-=30%'}, 2000);}, 300);
 

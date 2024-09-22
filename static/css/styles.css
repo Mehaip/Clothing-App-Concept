@@ -101,13 +101,12 @@
         }
 
         #question{
-             opacity: 0;
+            opacity: 0;
             visibility: hidden;
             transition: opacity 2s ease, visibility 2s ease;
         }
 
         #question.show{
-
             opacity: 1;
             visibility: visible;
 
