@@ -24,13 +24,13 @@
 
         #p-style2{
             font-size: 30px;
-
+            margin-top: 0px;
         }
 
         #umbrella{
             font-size: 60px;
             font-weight: 800;
-            margin-bottom: -15px;
+            margin-bottom: 0px;
             letter-spacing: 5px;
         }
 
@@ -45,7 +45,7 @@
             position: relative;
             border: 2px solid white; /* Box border */
             padding: 5px 10px;           /* Padding inside the box */
-            margin-top: -10px;        /* Spacing between the box and other content */
+            margin-top: 0px;        /* Spacing between the box and other content */
             background-color: rgba(51, 51, 51, 0.7); /* Dark grey with 80% opacity */
             text-align: center;      /* Center the text inside the box */
             width: 15%;              /* Adjust the width of the box (optional) */
@@ -101,14 +101,17 @@
         }
 
         #question{
+            margin-top: -90px;
             opacity: 0;
             visibility: hidden;
             transition: opacity 2s ease, visibility 2s ease;
+
         }
 
         #question.show{
             opacity: 1;
             visibility: visible;
+            display: block;
 
         }
 
@@ -165,8 +168,30 @@
 
         #tag-container{
             position: absolute;
-            margin-top: 400px;
+            margin-top: 180px;
         }
 
+        #resultsButton{
+               position: relative;
+            border: 2px solid white; /* Box border */
+            padding-top: 20px;           /* Padding inside the box */
+            margin-top: 80px;        /* Spacing between the box and other content */
+            background-color: rgba(51, 51, 51, 1); /* Dark grey with 80% opacity */
+            text-align: center;      /* Center the text inside the box */
+            width: 4%;              /* Adjust the width of the box (optional) */
+            height: 4%;
+            max-width: 600px;        /* Ensure the box doesn't get too wide on larger screens */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 2s ease, visibility 2s ease;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        #resultsButton.show{
+            opacity: 1;
+            visibility: visible;
+        }
 
 

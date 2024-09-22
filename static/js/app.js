@@ -50,20 +50,30 @@ function tagAdded(event){
 
 
 function startAnimation() {
-   $("#umbrella").fadeOut();
-   $("#p-style2").fadeOut();
-   $("#selection-box").fadeOut();
+   $("#umbrella").fadeOut(function() {
+   $(this).remove();});
+   $("#p-style2").fadeOut(function() {
+   $(this).remove() });
+   $("#selection-box").fadeOut(function() {
+   $(this).remove() });
 
    setTimeout(function(){
-        $("#weather-box").animate({top:'-=30%'}, 2000);}, 300);
+        $("#weather-box").animate({top:'-=26%'}, 2000);}, 300);
 
 
    setTimeout(function(){
        document.getElementById("keyword-box").classList.add('show');
         document.getElementById("question").classList.add('show');
         document.getElementById("suggestions").classList.add('show');
+        document.getElementById("resultsButton").classList.add('show');
    }, 1300)
 
+
+}
+
+document.getElementById("resultsButton").addEventListener("click", final_page);
+
+function showcase() {
 
 }
 
