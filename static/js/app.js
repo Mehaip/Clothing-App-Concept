@@ -14,6 +14,27 @@
 
 
 document.getElementById("startBtn").addEventListener("click", startAnimation);
+document.getElementById("keyword-input").addEventListener('keypress', tagAdded);
+const tags = [];
+
+function tagAdded(event){
+    if(event.key === 'Enter'){
+            let input = document.getElementById("keyword-input");
+            let tagText = input.value.trim();
+
+            if(tagText !== ""){
+                let newTag = document.createElement("div");
+                newTag.className = "tag";
+                newTag.textContent = tagText;
+                document.getElementById("tag-container").appendChild(newTag);
+                input.value= "";
+                tags.push(tagText);
+            }
+        console.log(tags);
+    }
+
+}
+
 
 function startAnimation() {
    $("#umbrella").fadeOut();

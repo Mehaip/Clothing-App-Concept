@@ -122,6 +122,8 @@
 
         }
 
+
+
         #suggestions{
             color:darkgrey;
             visibility: hidden;
@@ -134,3 +136,14 @@
             opacity: 1;
             visibility: visible;
         }
+
+        .tag{
+            color: white;
+            background-color: rgb(51, 51, 51);
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
