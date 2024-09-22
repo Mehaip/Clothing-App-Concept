@@ -27,6 +27,13 @@ function tagAdded(event){
                 newTag.className = "tag";
                 newTag.textContent = tagText;
                 document.getElementById("tag-container").appendChild(newTag);
+                setTimeout(function (){
+                    newTag.classList.add('show');
+                }, 0);
+                setTimeout(function (){
+                    newTag.classList.add('hide');
+                }, 2000);
+
                 input.value= "";
                 tags.push(tagText);
             }
@@ -41,14 +48,14 @@ function startAnimation() {
    $("#p-style2").fadeOut();
    $("#selection-box").fadeOut();
    setTimeout(function(){
-        $("#weather-box").animate({top:'-=21%'}, 2000);}, 300);
+        $("#weather-box").animate({top:'-=30%'}, 2000);}, 300);
 
 
    setTimeout(function(){
        document.getElementById("keyword-box").classList.add('show');
         document.getElementById("question").classList.add('show');
         document.getElementById("suggestions").classList.add('show');
-   }, 2000)
+   }, 1300)
 
 
 }
