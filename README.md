@@ -21,7 +21,8 @@ The app integrates:
 
 
 
-https://github.com/user-attachments/assets/3010781e-86a3-4a3c-8022-d37d48c0ebd4
+![ezgif-1-b5bc975dfa](https://github.com/user-attachments/assets/7148dd55-0ce3-4838-b8a5-821a65c05eb5)
+
 ![Screenshot 2024-09-23 202621](https://github.com/user-attachments/assets/aa3bf76f-dd6d-41de-add2-e4bde2388feb)
 
 
