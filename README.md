@@ -21,4 +21,4 @@ The app integrates:
 
 - https://github.com/user-attachments/assets/59bfbe4f-eff5-4df3-8e0e-439544d6d448
 
-![image](https://github.com/user-attachments/assets/d7818f0a-ccfd-4583-bbde-d669a64bf5f6)
+- ![image](https://github.com/user-attachments/assets/d7818f0a-ccfd-4583-bbde-d669a64bf5f6)
