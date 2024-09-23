@@ -21,7 +21,8 @@ The app integrates:
 
 
 -Each time the page loads, it refreshes the weather info.
-![ezgif-1-b5bc975dfa](https://github.com/user-attachments/assets/7148dd55-0ce3-4838-b8a5-821a65c05eb5)
+![ezgif-1-da1425d025](https://github.com/user-attachments/assets/9410134c-9bdc-498a-9722-497bf5d15dea)
+
 
 ![Screenshot 2024-09-23 202621](https://github.com/user-attachments/assets/aa3bf76f-dd6d-41de-add2-e4bde2388feb)
 
