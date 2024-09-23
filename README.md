@@ -19,6 +19,10 @@ The app integrates:
 
 - **Real-time Location**: [ipinfo.io](https://ipinfo.io/)
 
-- https://github.com/user-attachments/assets/59bfbe4f-eff5-4df3-8e0e-439544d6d448
 
-- ![image](https://github.com/user-attachments/assets/d7818f0a-ccfd-4583-bbde-d669a64bf5f6)
+
+https://github.com/user-attachments/assets/3010781e-86a3-4a3c-8022-d37d48c0ebd4
+![Screenshot 2024-09-23 202621](https://github.com/user-attachments/assets/aa3bf76f-dd6d-41de-add2-e4bde2388feb)
+
+
+
